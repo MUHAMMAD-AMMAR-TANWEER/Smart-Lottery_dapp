@@ -12,3 +12,6 @@ def test_get_entrance_fee():
     )
     assert lottery.getEntranceFee() > Web3.toWei(0.010, "ether")
     assert lottery.getEntranceFee() < Web3.toWei(0.022, "ether")
+
+
+# enum is used in solidity to define user define types
