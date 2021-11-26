@@ -8,7 +8,7 @@ import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
 ///after is all are contracts name which get imported
 contract Lottery is VRFConsumerBase, Ownable {
     address payable[] public players;
-    address recentWinner;
+    address payable public recentWinner;
     uint256 public randomness;
     uint256 public usdEntryFee;
     AggregatorV3Interface internal ethUsdPriceFeed;
