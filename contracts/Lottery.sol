@@ -3,7 +3,7 @@
 pragma solidity ^0.6.6;
 import "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
+import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
 
 ///after is all are contracts name which get imported
 contract Lottery is VRFConsumerBase, Ownable {
